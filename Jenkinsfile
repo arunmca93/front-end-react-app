@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_DEFAULT_REGION = 'us-east-1'
-        S3_BUCKET = 'arun-duppu-123'
+        S3_BUCKET = 'arun-jenkins-pipepline'
     }
 
     stages {
