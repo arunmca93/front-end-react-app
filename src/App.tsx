@@ -53,7 +53,7 @@ function App() {
                 {" "}
                 dream home
               </span>
-              in minutes. Build from Main.
+              in minutes. Build from QA.
             </h1>
             <p className="mt-4 max-w-xl text-sm text-slate-300 sm:text-base">
               Browse curated homes, apartments, and villas from trusted agents.
