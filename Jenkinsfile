@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    parameters {
+        string(name: 'BRANCH_NAME', defaultValue: 'main', description: 'Enter the branch name to deploy')
+    }
+
     environment {
         AWS_DEFAULT_REGION = 'us-east-1'
         S3_BUCKET = 'arun-duppu-123'
@@ -9,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main',
+                git branch: "${params.BRANCH_NAME}",
                     url: 'https://github.com/arunmca93/front-end-react-app',
                     credentialsId: 'aws-credentials'
             }
